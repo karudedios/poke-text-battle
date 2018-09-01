@@ -1,0 +1,46 @@
+{
+  "name": "poke-text-battle",
+  "version": "0.0.1",
+  "description": "Text-based pokemon battle game",
+  "main": "webpack.config.js",
+  "scripts": {
+    "watch": "webpack-dev-server --host \"$IP\" --port \"$PORT\" --public mongo-thingies-karudedios.c9users.io:8080",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "pokemon",
+    "text-based",
+    "sockets",
+    "javascript",
+    "react",
+    "flow",
+    "webpack"
+  ],
+  "author": "Carlos de Dios <c.dedios@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "react": "^16.4.2",
+    "react-dom": "^16.4.2",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^9.0.0",
+    "babel-loader": "^8.0.0",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.5.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-loader": "^2.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "flow": "^0.2.3",
+    "html-webpack-plugin": "^3.2.0",
+    "webpack": "^4.17.1",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.7"
+  }
+}
