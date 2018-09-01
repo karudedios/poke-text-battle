@@ -3,9 +3,21 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
   mode: 'development',
+  devtool: 'source-map',
 
   entry: {
     game: resolve(__dirname, 'src', 'index.js'),
+  },
+
+  resolve: {
+    alias: {
+      'utils': resolve(__dirname, 'src', 'utils'),
+      'sagas': resolve(__dirname, 'src', 'sagas'),
+      'actions': resolve(__dirname, 'src', 'actions'),
+      'reducers': resolve(__dirname, 'src', 'reducers'),
+      'containers': resolve(__dirname, 'src', 'containers'),
+      'components': resolve(__dirname, 'src', 'components'),
+    },
   },
 
   module: {

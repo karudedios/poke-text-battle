@@ -23,5 +23,11 @@
 
   <body>
     <div data-game-root></div>
+    
+    <script>
+      console.log(
+        <%= JSON.stringify(htmlWebpackPlugin.files) %>
+      );
+    </script>
   </body>
 </html>
