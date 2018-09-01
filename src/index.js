@@ -7,12 +7,27 @@ ReactDOM.render(
   <React.Fragment>
     <ComponentNegotiator
       componentName="HelloWorld"
-      pendingRender={<span>Loading HellWorld...</span>}
+      pendingRender={<h2>Loading HellWorld...</h2>}
     />
 
     <ComponentNegotiator
       componentName="HelloWorld"
-      pendingRender={<span>Loading HellWorld...Again</span>}
+      pendingRender={<h2>Loading HellWorld...</h2>}
+    />
+
+    <ComponentNegotiator
+      componentName="HelloWorld"
+      pendingRender={<h2>Loading HellWorld...</h2>}
+    />
+
+    <ComponentNegotiator
+      componentName="HelloWorld"
+      pendingRender={<h2>Loading HellWorld...</h2>}
+    />
+
+    <ComponentNegotiator
+      componentName="HelloWorld"
+      pendingRender={<h2>Loading HellWorld...</h2>}
     />
   </React.Fragment>,
   document.querySelector('[data-game-root]'),
