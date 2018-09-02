@@ -1,9 +1,6 @@
 // @flow
 import * as React from 'react';
-import Promise from 'bluebird';
 import lazyLoadingFactory from 'utils/lazyLoadingFactory';
-
-let timer = 1000;
 
 type PropTypes = {
   componentName: String,
@@ -32,10 +29,8 @@ export default class ComponentNegotiator extends React.Component<PropTypes, Stat
   componentDidMount() {
     const { componentName } = this.props;
 
-    Promise.delay(timer += 1000).then(() => {
-      lazyLoadingFactory.findComponent(componentName).then((c) => {
-        this.setState({ c });
-      });
+    lazyLoadingFactory.findComponent(componentName).then((c) => {
+      this.setState({ c });
     });
   }
 

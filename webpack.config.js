@@ -1,5 +1,6 @@
 const { resolve } = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const CompressionWebpackPlugin = require('compression-webpack-plugin');
 
 module.exports = {
   mode: 'development',
@@ -65,6 +66,11 @@ module.exports = {
     new HtmlWebpackPlugin({
       filename: 'index.html',
       template: resolve(__dirname, 'src', 'index.html'),
+    }),
+
+    new CompressionWebpackPlugin({
+      test: /\.js?$/,
+      deleteOriginalAsset: true,
     }),
   ],
 };
